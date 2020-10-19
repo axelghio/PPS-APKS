@@ -1,0 +1,45 @@
+<ion-content>
+  <ion-grid>
+    <div class="LoginBox">
+      <ion-row>
+        <div class="RetratoMargin">
+          <div class="RetratoMarco">
+            <img src="../../assets/image/foto.png">
+          </div>
+        </div>
+      </ion-row>
+      <ion-row>
+        <div>
+          <ion-button size="small" color="dark" (click)='presentAlertRadio()'>Cuentas</ion-button>
+        </div>
+      </ion-row>
+      <ion-row>
+        <div class="loginHolder">
+          <ion-item>
+            <ion-label>Correo:</ion-label>
+            <ion-input placeholder="Ingrese el correo" type="mail" [(ngModel)]="useremail"></ion-input>
+          </ion-item>
+        </div>
+      </ion-row>
+      <ion-row>
+        <div class="loginHolder2">
+          <ion-item>
+            <ion-label>Contraseña:</ion-label>
+            <ion-input placeholder="Ingrese la contraseña" type="password" [(ngModel)]="password"></ion-input>
+          </ion-item> 
+        </div>
+      </ion-row>
+      <ion-row>
+        <div class="background">
+          <img src="../../assets/image/Messenger.jpg">
+        </div>
+      </ion-row>
+      <ion-row>
+        <div class="btns">
+          <ion-button color="dark" (click)='Send(useremail, password)'>Aceptar</ion-button>
+          <ion-button color="dark" (click)='LimpiarPantalla()'>Limpiar</ion-button>
+        </div>
+      </ion-row>
+    </div>
+</ion-grid>
+</ion-content>

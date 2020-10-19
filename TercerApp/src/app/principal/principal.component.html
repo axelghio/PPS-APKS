@@ -1,0 +1,16 @@
+<ion-content>
+  <div id='color' class="color-Background">
+    <div id='style-estado-alarm' class="estado-Alarma">
+      <h3>{{textAlarma}}</h3>
+    </div>
+    <div class="content-Alarm">
+      <ion-chip class="btnActivar" outline color="light" (click)="ActivarAlarma()">
+        <ion-icon class="icoBtn" name="key-outline"></ion-icon>
+        <ion-label class="lblText">{{btnText}}</ion-label>
+      </ion-chip>
+     </div>
+     <div id='style-error-alarm' class="error-Mensaje">
+      <h4>{{textError}}</h4>
+    </div>
+  </div>
+</ion-content>

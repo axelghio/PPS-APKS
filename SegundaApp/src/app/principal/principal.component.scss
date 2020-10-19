@@ -1,0 +1,62 @@
+.contain-style{
+    background: lightblue;
+}
+.contain-Idiomas{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 190%;
+    //background: rgba(173, 216, 230, 0.603);
+}
+
+.contain-Animals{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -192%;
+    margin-bottom: 28.0%;
+    align-items: center;
+}
+
+ion-col{
+    padding-left: 5%;
+    border: solid 2px lightslategray;
+}
+
+h5{
+    text-align: center;
+    position: relative;
+    transform: translateY(-100px);
+
+}
+
+.seleccionadoAnimal{
+    transform: scale(1.4);
+}
+
+.seleccionadoColor{
+    transform: scale(1.2);
+}
+
+.seleccionadoNumero{
+    transform: scale(1.3);
+}
+
+.seleccionadoIdioma{
+    opacity: 1!important;
+}
+
+.idioma{
+    opacity: 0.5;
+}
+
+.animal{
+    transition: 0.5s;
+}
+
+.color{
+    transition: 0.5s;
+}
+
+.numero{
+    transition: 0.5s;
+}

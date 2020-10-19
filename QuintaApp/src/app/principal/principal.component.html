@@ -1,0 +1,22 @@
+<ion-content>
+    <ion-grid>
+        <div class="imgA">
+            <ion-row>
+                <ion-img [src]="imageA" (click)="EntrarChatA()"></ion-img>
+            </ion-row>
+        </div>
+        <div class="imgB">
+            <ion-row>
+                <ion-img [src]="imageB" (click)="EntrarChatB()"></ion-img>
+            </ion-row>
+        </div>
+        <div class="btnDesconectar">
+            <ion-row>
+                <ion-chip outline (click)="Volver()">
+                    <ion-label>Desconectar</ion-label>
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </ion-chip>
+            </ion-row>
+        </div>
+    </ion-grid>
+</ion-content>

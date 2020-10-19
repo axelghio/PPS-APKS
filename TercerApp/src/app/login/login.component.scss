@@ -1,0 +1,81 @@
+::placeholder{
+  background-color: lightgrey;
+  opacity: 100%;
+}
+
+.BoxLogin{
+  position: relative;
+  //display: inline-block;
+}
+
+.HolderLoginUser{
+  border-style: ridge;
+  border-color:rgba(30, 30, 141, 0.815);
+  border-width: 8px;
+  position: absolute;
+  top: -670px;
+  left: 10%;
+  right: 20%;
+  margin: 5%;
+  color: rgba(0, 0, 0, 0.973);
+  background: grey;
+}
+
+.HolderLoginPass{
+  border-style: ridge;
+  border-color:rgba(30, 30, 141, 0.815);
+  border-width: 8px;
+  position: absolute;
+  top: -600px;
+  left: 10%;
+  right: 20%;
+  margin: 5%;
+  color: rgba(39, 1, 1, 0.973);
+  background: grey;
+}
+
+ion-label{
+  border-style: ridge;
+  border-color:rgba(91, 91, 207, 0.836);
+  border-width: 8px;
+  background-color: darkgrey;
+}
+
+.action-sheet-group{
+  background: darkred;
+}
+.AccountSelected{
+  --background: rgb(29, 53, 53);
+}
+
+.AccountSelected, .action-sheet-group{
+  background: darkslateblue;
+}
+
+.MensajesMail{
+  position: absolute;
+  top: -520px;
+  left: 12%;
+  right: 20%;
+}
+
+.MensajesPass{
+  position: absolute;
+  top: -480px;
+  left: 12%;
+  right: 20%;
+}
+
+.BotonesForm{
+  position: absolute;
+  top: -360px;
+  left: 38%;
+  right: 5%;
+}
+
+.BotonCuentas{
+  position: absolute;
+  top: -200px;
+  left: 10%;
+  right: 5%;
+}

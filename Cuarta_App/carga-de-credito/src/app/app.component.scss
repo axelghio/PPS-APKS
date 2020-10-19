@@ -1,0 +1,32 @@
+#fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/image/splash.png") no-repeat center / cover;
+}
+
+#logoSplash{
+    height: 40vh;
+    width: 40vw;
+    display: flex;
+    left: 30vw;
+    bottom: 40vh;
+    align-items: center;
+    justify-content: center;
+    animation: animacion 4s;
+    position: absolute;
+}
+
+@keyframes animacion {
+    0% { 
+        -webkit-transform: scale(2); transform: scale(2);
+        -webkit-filter: blur(4px); filter: blur(4px); opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1); transform: scale(1);
+        -webkit-filter: blur(0px); filter: blur(0px); opacity: 1;
+    }
+}

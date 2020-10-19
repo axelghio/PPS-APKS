@@ -1,0 +1,32 @@
+<ion-content>
+  <div class="background">
+    <img src="./assets/image/seguridad.png" width="400" height="750">
+  </div>
+  <div class="BoxLogin">
+    <div class="HolderLoginUser">
+      <ion-input placeholder="Correo Electronico" type="mail" [(ngModel)]="useremail"></ion-input>
+    </div>
+    <div class="HolderLoginPass">
+      <ion-input placeholder="Contraseña" type="password" [(ngModel)]="clave"></ion-input>        
+    </div>
+    <div class="MensajesMail">
+      <ion-chip color="dark">
+        <ion-label>{{mensajeMail}}</ion-label>
+      </ion-chip>
+    </div>
+    <div class="MensajesPass">
+      <ion-chip color="dark">
+        <ion-label>{{mensajePass}}</ion-label>
+      </ion-chip>
+    </div>
+    <div class="BotonesForm">
+        <div class="BotonesFormB">
+          <ion-button color="dark" (click)='Send(useremail, clave)'>Entrar</ion-button>
+          <ion-button color="dark" (click)='LimpiarPantalla()'>Limpiar</ion-button>
+        </div>
+    </div>
+    <div class="BotonCuentas">
+      <ion-button color="dark" (click)='presentActionSheet()' expand="block">Cuentas</ion-button>
+    </div>
+  </div>
+</ion-content>

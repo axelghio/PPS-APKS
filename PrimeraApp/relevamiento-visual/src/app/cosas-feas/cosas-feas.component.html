@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="content-CosasLintas">
+    <!--DESLOGEARSE-->
+    <ion-chip class="volver" outline color="dark" (click)="Volver()">
+      <ion-icon name="arrow-back-circle"></ion-icon>
+      <ion-label>VOLVER</ion-label>
+    </ion-chip>
+  
+    <ion-chip class="camaraAccess" outline color="dark" (click)="takePicture()">
+      <ion-icon name="camera"></ion-icon>
+      <ion-label>SACAR FOTO</ion-label>
+    </ion-chip>
+
+    <ion-chip class="galeryAccess" outline color="dark" (click)="AccessGallery()">
+      <ion-icon name="image"></ion-icon>
+      <ion-label>SUBIR FOTO</ion-label>
+    </ion-chip>
+
+    <!--Monstrar FOTO-->
+    <div class="content-fotos">
+      <div *ngFor="let item of listaGaleria">
+        <ion-card>
+          <br>
+          <img src="{{item.foto}}" height="220" >
+          <h5>Usuario: {{item.email}}</h5>
+          <h5>FECHA: {{item.fecha}}</h5>
+          <!--<h5>LIKES: {{item.clike}}</h5>-->
+          <ion-chip class="btnLike" outline color="dark" style="left: 1px;" (click)="DarLike(item)">
+            <ion-icon name="heart-outline"></ion-icon>
+            <ion-label>LIKE {{item.clike}}</ion-label>
+          </ion-chip>
+        </ion-card>
+      </div>
+    </div>
+  </div>
+</ion-content>

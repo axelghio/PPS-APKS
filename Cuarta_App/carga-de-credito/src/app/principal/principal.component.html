@@ -1,0 +1,50 @@
+<ion-content>
+  <ion-grid>
+      <ion-row>
+          <ion-col>
+              <ion-card class="Saldo">
+                  <ion-item>
+                      <ion-icon class="icoCash" name="cash-outline"></ion-icon>
+                      <ion-label  class="lvlSaldo" >SALDO: {{valorBind}}</ion-label>
+                      <ion-icon  class="icoCash2"  name="logo-usd"></ion-icon>
+                  </ion-item>
+              </ion-card>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              <ion-card  class="mensajeError" *ngIf="error">
+                  <ion-item >
+                      <ion-text color="light">
+                          <h4>{{error}}</h4>
+                        </ion-text>
+                  </ion-item>
+              </ion-card>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+            <ion-chip  class="QR" outline color="warning" (click)="CargarQR()">
+                <ion-icon class="icoEscCod" name="qr-code-outline"></ion-icon>
+                <ion-label class="lblEscCod">Escanear Codigo</ion-label>
+            </ion-chip>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+            <ion-chip  class="btnLimpiar" outline color="warning" (click)="Limpiar()">
+               <ion-icon class="icoLimp" name="reload-circle-outline"></ion-icon>
+               <ion-label class="lblLimpiar">Limpiar</ion-label>
+            </ion-chip>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              <ion-chip  class="btnDesconectarse" outline color="warning" (click)="Volver()">
+                  <ion-icon class="icoDesc" name="chevron-back-outline"></ion-icon>
+                  <ion-label class="lblDesc">Desconectarse</ion-label>
+              </ion-chip>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+  </ion-content>

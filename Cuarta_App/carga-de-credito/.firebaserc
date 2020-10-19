@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pruebaapp-e78cc": {
+      "hosting": {
+        "app": [
+          "pruebaapp-e78cc"
+        ]
+      }
+    }
+  }
+}

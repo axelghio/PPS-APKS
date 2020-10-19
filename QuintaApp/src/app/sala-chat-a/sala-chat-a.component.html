@@ -1,0 +1,58 @@
+<ion-content>
+  <div class="chat">
+    <ion-grid>
+      <div >
+        <ion-row class="chatRow">
+          <ion-col>
+            <div class="volverPrincipal">
+              <ion-chip outline (click)="Volver()">
+                <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+                <ion-label>volver</ion-label>
+              </ion-chip>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="nameChat">
+              <ion-chip outline>
+                <ion-icon name="logo-octocat"></ion-icon>
+                <label>Chat pps-4A-4B</label>
+              </ion-chip>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+        <div class="mensajeria">
+          <div *ngFor="let item of listaMensajesClaseA">
+            <div *ngIf="item.correo === this.email then thenBlock else elseBlock"></div>
+            <ng-template #thenBlock>
+              <ion-card class="msjRight">
+                <label><b>{{item.mensaje}}</b></label>
+                <br>
+                <label>{{item.fecha}}</label>
+              </ion-card>
+            </ng-template>
+            <ng-template #elseBlock>
+              <ion-card class="msjLeft">                
+                <label>{{item.correo}}</label>
+                <br>
+                <label><b>{{item.mensaje}}</b></label>
+                <br>
+                <label>{{item.fecha}}</label>
+              </ion-card>
+            </ng-template>
+          </div>
+        </div>
+        </ion-row>
+        <ion-row>
+          <div class="enviomensajeria">
+            <input class="inputMSJ" id="idEnviarMsj" [(ngModel)]="envMensj" placeholder={{envMensj}}>
+            <ion-chip outline (click)="EnviarMensaje(envMensj)">
+              <ion-icon name="chevron-forward-circle"></ion-icon>
+              <ion-label></ion-label>
+            </ion-chip>
+          </div>
+        </ion-row>
+      </div>
+    </ion-grid>
+  </div>
+</ion-content>

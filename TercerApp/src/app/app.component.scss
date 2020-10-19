@@ -1,0 +1,36 @@
+#fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/image/splash.png") no-repeat center / cover;
+}
+
+#logoSplash{
+    height: 35vh;
+    width: 35vw;
+    display: flex;
+    left: 35vw;
+    bottom: 40vh;
+    align-items: center;
+    justify-content: center;
+    animation: animacion 4s;
+    position: absolute;
+}
+
+@keyframes animacion{
+    //0% { 
+    //    -webkit-transform: translateX(-1000px) rotate(-720deg); transform: translateX(-1000px) rotate(-720deg); 
+    //    -webkit-filter: blur(50px); filter: blur(50px); opacity: 0; 
+    //}
+    0% { 
+        -webkit-transform: translateX(-500px) rotate(-360deg); transform: translateX(-500px) rotate(-360deg); 
+        -webkit-filter: blur(25px); filter: blur(25px); opacity: 0.5; 
+    }
+    100% { 
+        -webkit-transform: translateX(0) rotate(0deg); transform: translateX(0px) rotate(0deg); 
+        -webkit-filter: blur(0); filter: blur(0); opacity: 1;
+    }
+}

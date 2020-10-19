@@ -1,0 +1,51 @@
+<ion-content>
+  <div class="background">
+    <img src="../../assets/image/backgroundKids.png" width="370" height="750">
+  </div>
+    <ion-fab horizontal="start" vertical="top" slot="fixed">
+      <ion-fab-button color="secondary">
+        <ion-icon md="caret-forward" ios="chevron-forward-circle-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="end">
+        <ion-fab-button color="light">
+          <ion-button size="medium" color="blue" class="btnAcc" type="button" (click)='Selected("admin")'>ADM</ion-button>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-button size="medium" color="blue" class="btnAcc" type="button" (click)='Selected("invitado")'>INV</ion-button>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-button size="medium" color="blue" class="btnAcc" type="button" (click)='Selected("usuario")'>USU</ion-button>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-button size="medium" color="blue" class="btnAcc" type="button" (click)='Selected("anonimo")'>ANO</ion-button>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-button size="medium" color="blue" class="btnAcc" type="button" (click)='Selected("tester")'>TES</ion-button>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+    <div class="HolderLoginUser">
+      <ion-item>
+        <ion-label position="floating">Correo Electronico</ion-label>
+        <ion-input [(ngModel)]="useremail"></ion-input>
+      </ion-item>
+    </div>
+    <div class="MensajesMail">
+        <ion-text color="warning">{{mensajeMail}}</ion-text>
+    </div>
+    <div class="HolderLoginPass">
+      <ion-item>
+        <ion-label position="floating">Clave</ion-label>
+        <ion-input [(ngModel)]="password"></ion-input>
+      </ion-item>
+    </div>
+    <div class="MensajesPass">
+        <ion-text color="warning">{{mensajePass}}</ion-text>
+    </div>
+    <div class="BotonesForm">
+        <div class="BotonesFormB">
+          <ion-button (click)='Send(useremail, password)'>Aceptar</ion-button>
+          <ion-button (click)='LimpiarPantalla()'>Limpiar</ion-button>
+        </div>
+    </div>
+</ion-content>

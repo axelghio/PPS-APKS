@@ -1,0 +1,54 @@
+<ion-content [fullscreen]="true">
+  
+  <img src="../../assets/image/background.jpg" width="600" height="220">
+
+  <div class="primeraListaBotones">
+    <ion-row>
+      <ion-col>
+        <ion-button size="small" color="dark" class="btnAcc" type="button" (click)='Selected("admin")'>Admin</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="small" color="dark" class="btnAcc" type="button" (click)='Selected("invitado")'>Invitado</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="small" color="dark" class="btnAcc" type="button" (click)='Selected("usuario")'>Usuario</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="segundaListaBotones">
+    <ion-row>
+      <ion-col>
+        <ion-button size="small" color="dark" class="btnAcc" type="button" (click)='Selected("anonimo")'>Anonimo</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="small" color="dark" class="btnAcc" type="button" (click)='Selected("tester")'>Tester</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="holder">
+    <ion-row>
+      <ion-col>
+        <ion-input placeholder="Correo Electronico" type="mail" name="correo" [(ngModel)]="useremail"></ion-input>
+      </ion-col>
+      <ion-col>
+        <ion-input placeholder="Contraseña" type="password" name="contra" [(ngModel)]="password"></ion-input>        
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="mensaje">
+    <ion-row>
+      <ion-col>
+        <ion-text color="danger">{{mensaje}}</ion-text>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="btn">
+    <ion-row>
+      <ion-col>
+        <ion-button color="dark" value="outline" (click)='Send(useremail, password)'>Aceptar</ion-button>
+        <ion-button color="dark" value="outline" (click)='LimpiarPantalla()'>Limpiar</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

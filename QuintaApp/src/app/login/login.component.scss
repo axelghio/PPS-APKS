@@ -1,0 +1,62 @@
+.LoginBox{
+    padding: 5%;
+    border-style: ridge;
+    border-color: blue;
+  }
+  
+  .RetratoMargin{
+    position: absolute;
+    padding-top: 35%;
+    top: 50px;
+    right: 120px;
+    width: 35%;
+    border-radius: 25%;
+    background: black;
+  }
+  
+  .RetratoMarco{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    width: 85%;
+    border-radius: 15%;
+    background: #3CE7F5;
+  }
+  
+  .loginHolder{
+    color: #000000;
+    position: relative;
+    padding-left: 50px;
+    top: 200px;
+    right: 25px;
+  }
+  
+  img{
+    border-radius: 15%;
+  }
+  
+  .loginHolder2{
+    color: #000000;
+    position: relative;
+    padding-left: 50px;
+    top: 370px;
+    right: 25px;
+  }
+  
+  ion-fab{
+    margin-top: 4%;
+    margin-left: 15%;
+  }
+  
+  .btns{
+    color: #000000;
+    position: relative;
+    padding-left: 85px;
+    top: -150px;
+    right: 25px;
+  }
+  
+  ion-content{
+    --background: #0c84da;
+  }

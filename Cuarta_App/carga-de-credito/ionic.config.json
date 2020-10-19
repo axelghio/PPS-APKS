@@ -1,0 +1,7 @@
+{
+  "name": "Carga de credito",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

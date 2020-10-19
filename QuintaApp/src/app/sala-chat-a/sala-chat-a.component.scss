@@ -1,0 +1,45 @@
+ion-content{
+    --background: #ff7f27;
+}
+
+.chat{
+    height: 90vh;
+}
+
+.msjRight{
+    margin-left: 30%;
+    text-align: right!important;
+}
+
+.msjLeft{
+    text-align: left!important;
+    margin-right: 30%;
+}
+
+.chatRow{
+    border-style: solid;
+    border-color: darkslategrey;
+}
+
+.mensajeria{
+    border-left-style: solid;
+    border-right-style: solid;
+    //border-bottom-style: solid;
+    border-color: darkslategrey;
+    height: 80vh;
+    width: 97.2vw;
+}
+
+.inputMSJ{
+    margin-top: 5px;
+    width: 250px;
+    height: 40px;
+    margin-left: 5%;
+}
+
+.enviomensajeria{
+    border-style: solid;
+    border-color: darkslategrey;
+    height: 10vh;
+    width: 97.2vw;
+}

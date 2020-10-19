@@ -1,0 +1,8 @@
+{
+  "name": "TercerApp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

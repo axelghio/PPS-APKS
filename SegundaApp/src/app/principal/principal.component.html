@@ -1,0 +1,94 @@
+<div class="contain-style">
+  <!--<img src="../../assets/image/backgroundKids.png" width="370" height="750">-->
+  <ion-grid class="contain-Idiomas">
+    <ion-row>
+      <ion-col>
+        <img class="idioma" src="../../../assets/image/españa.png" (click)="elegirIdioma('español')"
+        [ngClass]="{seleccionadoIdioma: valorIdioma == 'español'}">
+      </ion-col>
+      <ion-col>
+        <img class="idioma" src="../../../assets/image/portugal.png" (click)="elegirIdioma('portugues')"
+        [ngClass]="{seleccionadoIdioma: valorIdioma == 'portugues'}">
+      </ion-col>
+      <ion-col>
+        <img class="idioma" src="../../../assets/image/inglaterra.png" (click)="elegirIdioma('ingles')"
+        [ngClass]="{seleccionadoIdioma: valorIdioma == 'ingles'}">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="contain-Animals">
+    <ion-row>
+      <ion-col>
+        <img class="animal" src="../../../assets/image/leon.png" height="75" [ngClass]="{seleccionadoAnimal: tema == 'leon'}"
+        (click)="ReproducirAnimal('leon')">
+      </ion-col>
+      <ion-col>
+        <img class="color" src="../../../assets/image/amarillo.png" height="75" [ngClass]="{seleccionadoColor: tema == 'amarillo'}"
+        (click)="ReproducirColor('amarillo')">
+      </ion-col>
+      <ion-col>
+        <img class="numero" src="../../../assets/image/uno.png" height="75" [ngClass]="{seleccionadoNumero: tema == 'uno'}"
+        (click)="ReproducirNumero('uno')">
+      </ion-col>
+    </ion-row>  
+    <ion-row>
+      <ion-col>
+        <img class="animal" src="../../../assets/image/gallina.png" height="75" [ngClass]="{seleccionadoAnimal: tema == 'gallina'}"
+        (click)="ReproducirAnimal('gallina')">
+      </ion-col>
+      <ion-col>
+        <img class="color" src="../../../assets/image/azul.png" height="75" [ngClass]="{seleccionadoColor: tema == 'azul'}"
+        (click)="ReproducirColor('azul')">
+      </ion-col>
+      <ion-col>
+        <img class="numero" src="../../../assets/image/dos.png" height="75" [ngClass]="{seleccionadoNumero: tema == 'dos'}"
+        (click)="ReproducirNumero('dos')">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img class="animal" src="../../../assets/image/gato.png" height="75" [ngClass]="{seleccionadoAnimal: tema == 'gato'}"
+        (click)="ReproducirAnimal('gato')">          
+      </ion-col>
+      <ion-col>
+        <img class="color" src="../../../assets/image/celeste.png" height="75" [ngClass]="{seleccionadoColor: tema == 'celeste'}"
+        (click)="ReproducirColor('celeste')">
+      </ion-col>
+      <ion-col>
+        <img class="numero" src="../../../assets/image/tres.png" height="75" [ngClass]="{seleccionadoNumero: tema == 'tres'}"
+        (click)="ReproducirNumero('tres')">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img class="animal" src="../../../assets/image/oveja.png" height="75" [ngClass]="{seleccionadoAnimal: tema == 'oveja'}"
+        (click)="ReproducirAnimal('oveja')">
+      </ion-col>
+      <ion-col>
+        <img class="color" src="../../../assets/image/naranja.png" height="75" [ngClass]="{seleccionadoColor: tema == 'naranja'}"
+        (click)="ReproducirColor('naranja')">
+      </ion-col>
+      <ion-col>
+        <img class="numero" src="../../../assets/image/cuatro.png" height="75" [ngClass]="{seleccionadoNumero: tema == 'cuatro'}"
+        (click)="ReproducirNumero('cuatro')">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img class="animal" src="../../../assets/image/oso.png" height="75"  [ngClass]="{seleccionadoAnimal: tema == 'oso'}"
+        (click)="ReproducirAnimal('oso')">
+      </ion-col>
+      <ion-col>
+        <img class="color" src="../../../assets/image/verde.png" height="75"  [ngClass]="{seleccionadoColor: tema == 'verde'}"
+        (click)="ReproducirColor('verde')">
+      </ion-col>
+      <ion-col>
+        <img class="numero" src="../../../assets/image/cinco.png" height="75"  [ngClass]="{seleccionadoNumero: tema == 'cinco'}"
+        (click)="ReproducirNumero('cinco')">          
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="desconectar()" expand="full">DESCONECTARSE</ion-button>
+    </ion-row>
+  </ion-grid>
+</div>

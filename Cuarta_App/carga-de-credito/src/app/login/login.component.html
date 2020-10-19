@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="ConjuntoBackground">
+    <img src="../../assets/image/Tarjeta.png" alt="">
+    
+    <div class="LoginBox">
+      <div class="loginHolder">
+        <ion-input placeholder="Ingrese el correo" type="mail" [(ngModel)]="useremail"></ion-input>
+      </div>
+
+      <div class="loginHolder2">
+        <ion-input placeholder="Ingrese la contraseña" type="password" [(ngModel)]="password"></ion-input>
+      </div>
+
+      <div class="btns">
+        <ion-button color="grey" (click)='Send(useremail, password)'>Aceptar</ion-button>
+        <ion-button color="grey" (click)='LimpiarPantalla()'>Limpiar</ion-button>
+      </div>
+
+    <div class="selectAcc">
+      <ion-label>TIPO DE USUARIO</ion-label>
+      <ion-select [(ngModel)]="SelectedItem" (ionChange)="OnChange($event)" interface="popover">
+        <ion-select-option>admin</ion-select-option>
+        <ion-select-option>usuario</ion-select-option>
+        <ion-select-option>invitado</ion-select-option>
+        <ion-select-option>anonimo</ion-select-option>
+        <ion-select-option>tester</ion-select-option>
+      </ion-select>
+    </div>
+  </div>
+</div>
+</ion-content>
